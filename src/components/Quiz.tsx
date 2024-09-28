@@ -43,7 +43,11 @@ const Quiz:React.FC<QuizProps> = (props) => {
             counter={props.questionId}
             total={props.questionTotal}
           />
-          <Question content={props.question} />
+          <Question
+            content={props.question}
+            options={props.answerOptions} // Pass answer options
+            handleAnswerSelected={props.onAnswerSelected} // Pass answer selection function
+          />
 
           <ul className="answerOptions">
             {props.answerOptions.map(renderAnswerOptions)}
