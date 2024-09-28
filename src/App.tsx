@@ -1,18 +1,8 @@
-import React, { useState, useEffect, useCallback } from "react";
+import  { useState, useEffect, useCallback } from "react";
 import "./App.css";
 import QuizQuestion from "./utils/QuizQuestion";
 import Quiz from "./components/Quiz";
 
-// interface Answer {
-//   type: string;
-//   content: string;
-// }
-
-// interface Question {
-//   question: string;
-//   answers: Answer[];
-//   correct: number;
-// }
 
 function App() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -22,24 +12,23 @@ function App() {
   const [finalResult, setFinalResult] = useState<string | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
-  // Check if there are questions available
     // Check if there are questions available
-    const hasQuestions = QuizQuestion.length > 0;
-    const currentQuestion = hasQuestions? QuizQuestion[currentQuestionIndex]: null;
+  const hasQuestions = QuizQuestion.length > 0;
+  const currentQuestion = hasQuestions? QuizQuestion[currentQuestionIndex]: null;
 
-    const calculateResults = useCallback(() => {
-      const totalQuestions: number = QuizQuestion.length;
+  const calculateResults = useCallback(() => {
+    const totalQuestions: number = QuizQuestion.length;
 
-      const score: number = userAnswers.reduce((totalScore, answer, index) => {
-        return answer === QuizQuestion[index].correct
+    const score: number = userAnswers.reduce((totalScore, answer, index) => {
+      return answer === QuizQuestion[index].correct
           ? totalScore + 1
           : totalScore;
-      }, 0);
+    }, 0);
 
-      console.log("User answers", score);
+    console.log("User answers", score);
 
-      setFinalResult(`You scored ${score} out of ${totalQuestions}`);
-    }, [userAnswers]);
+    setFinalResult(`You scored ${score} out of ${totalQuestions}`);
+  }, [userAnswers]);
 
   useEffect(() => {
     // Calculate results when reaching the end of questions
