@@ -12,92 +12,188 @@ interface quizQuestions {
 }
 const QuizQuestion: quizQuestions[] = [
   {
-    question: "What franchise would you rather play a game from?",
+    question:
+      "Which of these programming languages is mainly used for web development?",
     answers: [
       {
-        type: "Microsoft",
-        content: "Halo",
+        type: "Python",
+        content: "Python",
       },
       {
-        type: "Nintendo",
-        content: "Pokemon",
+        type: "Java",
+        content: "Java",
       },
       {
-        type: "Sony",
-        content: "Uncharted",
+        type: "JavaScript",
+        content: "JavaScript",
+      },
+    ],
+    correct: 2,
+  },
+  {
+    question: "What does HTML stand for?",
+    answers: [
+      {
+        type: "Markup",
+        content: "HyperText Markup Language",
+      },
+      {
+        type: "Machine",
+        content: "HyperText Machine Language",
+      },
+      {
+        type: "Management",
+        content: "HyperText Management Language",
       },
     ],
     correct: 0,
   },
   {
-    question: "Which console would you prefer to play with friends?",
+    question:
+      "Which of these is a version control system used for tracking code changes?",
     answers: [
       {
-        type: "Microsoft",
-        content: "X-Box",
+        type: "Git",
+        content: "Git",
       },
       {
-        type: "Nintendo",
-        content: "Nintendo 64",
+        type: "Node.js",
+        content: "Node.js",
       },
       {
-        type: "Sony",
-        content: "Playstation 1",
+        type: "React",
+        content: "React",
+      },
+    ],
+    correct: 0,
+  },
+  {
+    question:
+      "Which of these is a popular operating system for desktops and laptops?",
+    answers: [
+      {
+        type: "Android",
+        content: "Android",
+      },
+      {
+        type: "Windows",
+        content: "Windows",
+      },
+      {
+        type: "iOS",
+        content: "iOS",
       },
     ],
     correct: 1,
   },
   {
     question:
-      "Which of these racing franchises would you prefer to play a game from?",
+      "Which of the following is a popular cloud computing service provider?",
     answers: [
       {
-        type: "Microsoft",
-        content: "Forza",
+        type: "AWS",
+        content: "Amazon Web Services (AWS)",
       },
       {
-        type: "Nintendo",
-        content: "Mario Kart",
+        type: "Spotify",
+        content: "Spotify",
       },
       {
-        type: "Sony",
-        content: "Gran Turismo",
-      },
-    ],
-    correct: 2,
-  },
-  {
-    question: "Which of these games do you think is best?",
-    answers: [
-      {
-        type: "Microsoft",
-        content: "BioShock",
-      },
-      {
-        type: "Nintendo",
-        content: "The Legend of Zelda: Ocarina of Time",
-      },
-      {
-        type: "Sony",
-        content: "Final Fantasy VII",
+        type: "Instagram",
+        content: "Instagram",
       },
     ],
     correct: 0,
   },
   {
-    question: "What console would you prefer to own?",
+    question:
+      "What is the name of the most popular version control repository hosting service?",
     answers: [
       {
-        type: "Microsoft",
-        content: "X-Box One",
+        type: "Google",
+        content: "Google Drive",
       },
       {
-        type: "Nintendo",
-        content: "Wii U",
+        type: "GitHub",
+        content: "GitHub",
       },
       {
-        type: "Sony",
-        content: "Playstation 4",
+        type: "Dropbox",
+        content: "Dropbox",
+      },
+    ],
+    correct: 1,
+  },
+  {
+    question: "What is the purpose of CSS in web development?",
+    answers: [
+      {
+        type: "Backend",
+        content: "To handle backend server requests",
+      },
+      {
+        type: "Database",
+        content: "To manage the database",
+      },
+      {
+        type: "Styling",
+        content: "To style and layout web pages",
+      },
+    ],
+    correct: 2,
+  },
+  {
+    question: "Which language is used for querying databases?",
+    answers: [
+      {
+        type: "SQL",
+        content: "SQL",
+      },
+      {
+        type: "JavaScript",
+        content: "JavaScript",
+      },
+      {
+        type: "CSS",
+        content: "CSS",
+      },
+    ],
+    correct: 0,
+  },
+  {
+    question:
+      "Which of these platforms is used for hosting open-source projects?",
+    answers: [
+      {
+        type: "Twitch",
+        content: "Twitch",
+      },
+      {
+        type: "GitHub",
+        content: "GitHub",
+      },
+      {
+        type: "LinkedIn",
+        content: "LinkedIn",
+      },
+    ],
+    correct: 1,
+  },
+  {
+    question:
+      "Which of these terms is used to describe a small piece of reusable code?",
+    answers: [
+      {
+        type: "Method",
+        content: "Function",
+      },
+      {
+        type: "Module",
+        content: "Module",
+      },
+      {
+        type: "Component",
+        content: "Component",
       },
     ],
     correct: 2,
@@ -105,3 +201,5 @@ const QuizQuestion: quizQuestions[] = [
 ];
 
 export default QuizQuestion;
+
+
